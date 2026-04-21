@@ -1,0 +1,39 @@
+table 'Transport Mode'
+	lineageTag: ef971236-ead4-4a8b-b2ac-2cb8e91d297b
+	sourceLineageTag: [dbo].[Transport Mode]
+
+	column TransportModeKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 13624332-c8a6-46a7-8285-219958961a4e
+		sourceLineageTag: TransportModeKey
+		summarizeBy: count
+		sourceColumn: TransportModeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Transport_Mode
+		dataType: string
+		lineageTag: beacc647-5fb2-49e5-8ca8-39fd84f70714
+		sourceLineageTag: Transport_Mode
+		summarizeBy: none
+		sourceColumn: Transport_Mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModeGroup
+		dataType: string
+		lineageTag: 6b3120c8-ebbd-44e5-810e-f9eecc8bf2db
+		sourceLineageTag: ModeGroup
+		summarizeBy: none
+		sourceColumn: ModeGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Transport Mode' = entity
+		mode: directLake
+		source
+			entityName: Transport Mode
+			schemaName: dbo
+			expressionSource: 'DirectLake - SoftUni'
+

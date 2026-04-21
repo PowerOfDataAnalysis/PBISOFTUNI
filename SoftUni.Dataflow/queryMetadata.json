@@ -1,0 +1,62 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "SoftUni",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "DimTransportMode csv": {
+      "queryId": "d9bc86a7-1d50-4de9-8097-4a4f42e29b43",
+      "queryName": "DimTransportMode csv",
+      "loadEnabled": false
+    },
+    "DimTransportMode csv_DataDestination": {
+      "queryId": "35bafd7e-d828-482a-bdaf-efae94ecb515",
+      "queryName": "DimTransportMode csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "DimProductCategory csv": {
+      "queryId": "99592e10-dae3-4d36-8bf2-0af40f06e876",
+      "queryName": "DimProductCategory csv",
+      "loadEnabled": false
+    },
+    "DimProductCategory csv_DataDestination": {
+      "queryId": "27f55749-c5ea-4f00-8a40-8f0d5ec05ebe",
+      "queryName": "DimProductCategory csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "DimPort csv": {
+      "queryId": "c1f29f4a-6537-43f5-8a08-64c81bd828ce",
+      "queryName": "DimPort csv",
+      "loadEnabled": false
+    },
+    "DimPort csv_DataDestination": {
+      "queryId": "1bcdd425-ba62-4a04-8bcb-f81fcfca8055",
+      "queryName": "DimPort csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "DimDate csv": {
+      "queryId": "e4849639-f7bf-4a77-8218-29105f8c20a0",
+      "queryName": "DimDate csv",
+      "loadEnabled": false
+    },
+    "DimDate csv_DataDestination": {
+      "queryId": "e93d1b36-c64f-4df3-a3ab-a26cc4d60a28",
+      "queryName": "DimDate csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"79e15044-6017-4394-803c-d9c7e9d7af8f\",\"DatasourceId\":\"ebac24dd-0189-45c0-aabd-bc7b26e8e962\"}"
+    }
+  ]
+}
