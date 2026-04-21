@@ -7,7 +7,7 @@ table DimDate
 		formatString: 0
 		lineageTag: fa4b3a63-c4f5-48b4-a92b-f7a5b59aec75
 		sourceLineageTag: DateKey
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: DateKey
 
 		annotation SummarizationSetBy = Automatic
@@ -27,7 +27,7 @@ table DimDate
 		formatString: 0
 		lineageTag: 7d7e36d8-2a84-4c93-ac57-164f781bdf83
 		sourceLineageTag: Year
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Year
 
 		annotation SummarizationSetBy = Automatic
@@ -46,7 +46,7 @@ table DimDate
 		formatString: 0
 		lineageTag: f74c7e18-4915-4416-b77c-b47d28fefb5c
 		sourceLineageTag: MonthNo
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: MonthNo
 
 		annotation SummarizationSetBy = Automatic
@@ -75,7 +75,7 @@ table DimDate
 		formatString: 0
 		lineageTag: e2ce0470-2438-489a-ab7b-536dd25feaaa
 		sourceLineageTag: WeekNo
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: WeekNo
 
 		annotation SummarizationSetBy = Automatic
@@ -85,7 +85,7 @@ table DimDate
 		formatString: 0
 		lineageTag: 5576316f-00a0-4465-bc1c-e7932f208d3f
 		sourceLineageTag: Day
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Day
 
 		annotation SummarizationSetBy = Automatic
