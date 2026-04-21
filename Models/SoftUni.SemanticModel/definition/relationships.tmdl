@@ -1,0 +1,4 @@
+relationship ee1d3a70-5339-d17f-f718-5b3d5ab39cfa
+	fromColumn: calendar.Date
+	toColumn: DimDate.Date
+
