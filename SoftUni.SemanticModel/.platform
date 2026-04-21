@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SoftUni"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bab0402a-ee23-9c5a-4cd8-10288d7b2acd"
+  }
+}

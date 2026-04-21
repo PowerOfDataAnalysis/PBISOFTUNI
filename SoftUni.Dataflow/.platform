@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "SoftUni"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3a97be4b-b4bf-bb5c-413e-07089d24786b"
+  }
+}
