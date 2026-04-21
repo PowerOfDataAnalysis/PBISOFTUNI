@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.72\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY26SU04\",\"version\":{\"visual\":\"2.8.0\",\"report\":\"3.2.0\",\"page\":\"2.3.1\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY26SU04",
+            "path": "BaseThemes/CY26SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9fc7f6cfa543c45c949a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"e815de7ad50c016dd8d4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":46.96330991412959,\"y\":229.82045277127244,\"z\":0,\"width\":279.78142076502735,\"height\":279.78142076502735,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"DimDate.Date\"},{\"queryRef\":\"calendar.Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"DimDate.Date\",\"NativeReferenceName\":\"Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Date\"},\"Name\":\"calendar.Date\",\"NativeReferenceName\":\"Date1\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 279.78,
+          "width": 279.78,
+          "x": 46.96,
+          "y": 229.82,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
