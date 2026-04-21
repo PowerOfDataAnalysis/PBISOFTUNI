@@ -1,0 +1,177 @@
+table calendar
+	lineageTag: 6e677596-b322-47e3-a46e-f3bb26555e9a
+	sourceLineageTag: [dbo].[calendar]
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9b37a23e-4bb1-465c-9f7c-5ea086185f0f
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 8eb4211f-f8a3-4c85-b9f8-5f66cf1d5fab
+		sourceLineageTag: Year
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: c03bd516-f417-436b-9487-5dceca88e0b0
+		sourceLineageTag: Month
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: 2b75acc1-0bd9-4fe2-8673-8ac304c0d7f2
+		sourceLineageTag: MonthName
+		summarizeBy: none
+		sourceColumn: MonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthShort
+		dataType: string
+		lineageTag: e0701100-48b3-44a6-a49a-eb924cbc2093
+		sourceLineageTag: MonthShort
+		summarizeBy: none
+		sourceColumn: MonthShort
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthYear
+		dataType: string
+		lineageTag: 360c8132-212c-449c-bd88-3d19a464195b
+		sourceLineageTag: MonthYear
+		summarizeBy: none
+		sourceColumn: MonthYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 6dfc56bd-fcbb-49d3-b554-2faab9fe4811
+		sourceLineageTag: Quarter
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 5bbb87ad-d8dc-4de7-aeda-9ff49d64b755
+		sourceLineageTag: Day
+		summarizeBy: sum
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeek
+		dataType: int64
+		formatString: 0
+		lineageTag: 58fab187-b683-468c-9b9b-6b82ad5841a6
+		sourceLineageTag: DayOfWeek
+		summarizeBy: sum
+		sourceColumn: DayOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayName
+		dataType: string
+		lineageTag: 7e739f00-c581-4cd1-913f-5b1c75f3bfda
+		sourceLineageTag: DayName
+		summarizeBy: none
+		sourceColumn: DayName
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekOfYear
+		dataType: int64
+		formatString: 0
+		lineageTag: 6e6f2a05-35b9-4f96-af7e-ef885fd588f5
+		sourceLineageTag: WeekOfYear
+		summarizeBy: sum
+		sourceColumn: WeekOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthNum
+		dataType: int64
+		formatString: 0
+		lineageTag: 217f4d2f-90a1-499e-8215-658c770e1067
+		sourceLineageTag: YearMonthNum
+		summarizeBy: sum
+		sourceColumn: YearMonthNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsWeekend
+		dataType: int64
+		formatString: 0
+		lineageTag: e83b85c2-0e26-4a5d-9c55-73bc162f6465
+		sourceLineageTag: IsWeekend
+		summarizeBy: sum
+		sourceColumn: IsWeekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column StartOfMonth
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1e95a8f9-2a86-4501-8bed-50bb303cf2af
+		sourceLineageTag: StartOfMonth
+		summarizeBy: none
+		sourceColumn: StartOfMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column EndOfMonth
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 324987e7-6ce2-42ed-8944-70b7b646bbc4
+		sourceLineageTag: EndOfMonth
+		summarizeBy: none
+		sourceColumn: EndOfMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column StartOfYear
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3c86077f-0658-4ce9-8393-5e26caee7af8
+		sourceLineageTag: StartOfYear
+		summarizeBy: none
+		sourceColumn: StartOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column EndOfYear
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 69833043-1466-400c-a11a-77100238f50a
+		sourceLineageTag: EndOfYear
+		summarizeBy: none
+		sourceColumn: EndOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	partition calendar = entity
+		mode: directLake
+		source
+			entityName: calendar
+			schemaName: dbo
+			expressionSource: 'DirectLake - SoftUni'
+

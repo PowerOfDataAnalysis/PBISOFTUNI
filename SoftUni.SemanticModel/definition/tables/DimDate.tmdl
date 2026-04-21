@@ -1,0 +1,108 @@
+table DimDate
+	lineageTag: d9132259-d2ed-4877-aefb-7f94f3655267
+	sourceLineageTag: [dbo].[DimDate]
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: fa4b3a63-c4f5-48b4-a92b-f7a5b59aec75
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cfa2c29f-87e7-4d34-a3a9-edbd6a635f7c
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d7e36d8-2a84-4c93-ac57-164f781bdf83
+		sourceLineageTag: Year
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		lineageTag: 8dbcb671-72b2-420b-bdc9-85688723f7e5
+		sourceLineageTag: Quarter
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNo
+		dataType: int64
+		formatString: 0
+		lineageTag: f74c7e18-4915-4416-b77c-b47d28fefb5c
+		sourceLineageTag: MonthNo
+		summarizeBy: none
+		sourceColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: f62eebba-a65c-43e9-83cf-9a8059daafc0
+		sourceLineageTag: MonthName
+		summarizeBy: none
+		sourceColumn: MonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 72085dc4-291d-4c17-9981-df87896108bb
+		sourceLineageTag: YearMonth
+		summarizeBy: none
+		sourceColumn: YearMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNo
+		dataType: int64
+		formatString: 0
+		lineageTag: e2ce0470-2438-489a-ab7b-536dd25feaaa
+		sourceLineageTag: WeekNo
+		summarizeBy: none
+		sourceColumn: WeekNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 5576316f-00a0-4465-bc1c-e7932f208d3f
+		sourceLineageTag: Day
+		summarizeBy: none
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayName
+		dataType: string
+		lineageTag: a3d617aa-d439-4b43-87d4-58fce49de833
+		sourceLineageTag: DayName
+		summarizeBy: none
+		sourceColumn: DayName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = entity
+		mode: directLake
+		source
+			entityName: DimDate
+			schemaName: dbo
+			expressionSource: 'DirectLake - SoftUni'
+

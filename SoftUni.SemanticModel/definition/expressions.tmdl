@@ -1,0 +1,11 @@
+expression 'DirectLake - SoftUni' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/f7750814-3e39-485b-ac87-6b7d059fdeb1/83edc301-a168-4d6b-b1ce-8280621e913a", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 3d860eb2-a83b-462c-bfb3-4723fc6ceee4
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[Dim Product Category]"}},"objectType":"Table"}]
+
